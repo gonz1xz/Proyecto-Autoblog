@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@600&display=swap');
+
+* {
+    font-family: 'Roboto Serif', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../imgs/fondo-signin.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+footer {
+    color: aliceblue;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+}
+
+#navbarSignin {
+    background-color: rgba(255, 255, 255, 0.7);
+    font-size: 19px;
+    color: white;
+    -webkit-text-stroke: 0.7px #000;
+    -moz-text-stroke: 0.7px #000;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.title h1 {
+    text-align: center;
+    font-size: 70px;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+}
+
+.title p {
+    text-align: center;
+    font-size: 5vw;
+}
+
+.cita p {
+    font-family: "adobe-handwriting-ernie", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+
+/* Estilos responsive */
+@media screen and (max-width: 767px) {
+    .title h1 {
+        font-size: 40px;
+    }
+
+    .title p {
+        font-size: 3.5vw;
+    }
+
+    .cita p {
+        font-size: 20px;
+    }
+}

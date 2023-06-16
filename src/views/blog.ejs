@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GGC Autoblog</title>
+
+    <!--Estilos-->
+    <link rel="stylesheet" href="https://use.typekit.net/jvs5fzv.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/estilos/style.css">
+
+
+    <!--Scripts-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> 
+
+</head>
+<body>
+
+    <header>
+
+        <nav class="navbar navbar-expand-sm">
+            <div class="container-fluid">
+                <div class="d-flex align-items-center">
+                    <a href=""><img src="imgs/LogoBarra.png" alt="LogoBarraNavegacion"></a>
+                </div>
+                <div class="navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto ">
+                        <li class="nav-item"><a class="nav-link" href="#quiensoy">¿Quien soy?</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#recomendaciones">Recomendaciones</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#opiniones">Opiniones</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#redes">Redes sociales</a></li>
+                        <li class="nav-item"><a onclick="alert('Gracias por vistar mi blog!')" id="deslogearse" class="nav-link" href="/logout">Deslogearse</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="title">
+            <h1>Bienvenido a mi Autoblog</h1>
+        </div>
+
+        <div class="cita">
+            <p>
+                "No busques fallos, encuentra un remedio; cualquiera puede quejarse".- Henry Ford
+            </p>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="row" id="quiensoy">
+            <div class="container text-center">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h2>¿Quien Soy?</h2>
+                        </div>
+                        <div class="card-text-presentacion">
+                            <p class="p-xxl-5">
+                                ¡Hola, Bienvenido a mi Autoblog! Soy Gonzalo, un apasionado mecánico con amplio conocimiento sobre autos. <br>
+                                Me encanta compartir mi experiencia y brindar recomendaciones sobre mantenimiento y cuidado de vehículos. <br>
+                                Estoy aquí para ayudarte con cualquier pregunta o problema automotriz que tengas. <br>
+                                ¡No dudes en contactarme para obtener asesoramiento personalizado y mejorar el rendimiento de tu auto! <br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="row text-center" id="recomendaciones">
+            <h2>Recomendaciones</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12"> <!--Comienza una carta-->
+                    <div class="card mb-5 shadow-sm custom-card">
+                        <img src="imgs/nivel-de-aceite.jpg" class="img-fluid" alt="imagen nivel-de-aceite">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h4>Verificar Aceite</h4>
+                            </div>
+                            <div class="card-text">
+                                <p>Revisar regularmente el nivel de aceite del automóvil es esencial para garantizar una lubricación adecuada del motor, prevenir el sobrecalentamiento, mantener un buen sellado y detectar posibles problemas en etapas tempranas. Recuerda seguir las pautas del fabricante en cuanto a la frecuencia de cambio y los niveles recomendados de aceite para tu vehículo en particular.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>                                    <!--Termina una carta-->
+                <div class="col-lg-4 col-md-6 col-sm-12"> <!--Comienza una carta-->
+                    <div class="card mb-5 shadow-sm custom-card">
+                        <img src="imgs/liquido-refrigerante.jpg" class="img-fluid" alt="imagen liquido-refrigerante">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h4>Verificar Liquido Refrigerante</h4>
+                            </div>
+                            <div class="card-text">
+                                <p>Revisar regularmente el líquido refrigerante de tu auto es esencial para garantizar un rendimiento adecuado del sistema de enfriamiento, proteger el motor contra el sobrecalentamiento y prevenir problemas costosos a largo plazo. Siempre consulta el manual del propietario de tu vehículo para obtener pautas específicas sobre cuándo y cómo revisar el líquido refrigerante.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>                                    <!--Termina una carta-->
+                <div class="col-lg-4 col-md-6 col-sm-12"> <!--Comienza una carta-->
+                    <div class="card mb-5 shadow-sm custom-card">
+                        <img src="imgs/distribucion.jpg" class="img-fluid" alt="imagen distribucion del motor">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h4>Verificar distribución</h4>
+                            </div>
+                            <div class="card-text">
+                                <p>Revisar regularmente la distribución del auto es esencial para asegurar una sincronización adecuada del motor, prevenir daños graves y evitar averías costosas. Consulta el manual del propietario de tu vehículo para conocer el intervalo de reemplazo recomendado y sigue las pautas del fabricante en cuanto al mantenimiento de la distribución.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>                                    <!--Termina una carta-->
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12"> <!--Comienza una carta-->
+                    <div class="card mb-5 shadow-sm custom-card">
+                        <img src="imgs/Mantenimiento.jpg" class="img-fluid" alt="imagen mantenimiento">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h4>Mantenimiento General</h4>
+                            </div>
+                            <div class="card-text">
+                                <p>El mantenimiento general regular de tu vehículo es esencial para garantizar la seguridad, confiabilidad y eficiencia de funcionamiento, así como para prolongar su vida útil. Sigue las recomendaciones del fabricante en cuanto a los intervalos de mantenimiento y busca el asesoramiento de profesionales calificados para asegurarte de que tu vehículo esté en las mejores condiciones posibles.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>                                    <!--Termina una carta-->
+                <div class="col-lg-4 col-md-6 col-sm-12"> <!--Comienza una carta-->
+                    <div class="card mb-5 shadow-sm custom-card">
+                        <img src="imgs/elementos-seguridad.jpg" class="img-fluid" alt="imagen elementos de seguridad">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h4>Verificar elementos de seguridad</h4>
+                            </div>
+                            <div class="card-text">
+                                <p>Verificar los elementos de seguridad de tu auto es esencial para garantizar tu protección y la de tus pasajeros. Además, te ayuda a cumplir con las regulaciones legales, prevenir accidentes y mantener tu auto en buen estado. Dedica tiempo a revisar y mantener los elementos de seguridad y, si es necesario, busca la ayuda de profesionales calificados para garantizar que tu auto esté en las mejores condiciones posibles.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>                                    <!--Termina una carta-->
+                <div class="col-lg-4 col-md-6 col-sm-12"> <!--Comienza una carta-->
+                    <div class="card mb-5 shadow-sm custom-card">
+                        <img src="imgs/decomentacion.jpg" class="img-fluid" alt="imagen documentacion automotor">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h4>Documentación del vehiculo</h4>
+                            </div>
+                            <div class="card-text container-fluid">
+                                <p>Verificar regularmente los documentos del vehículo es crucial para cumplir con los requisitos legales, conducir sin preocupaciones, obtener protección financiera, respaldar reclamos y mantener al día el mantenimiento del vehículo. Asegúrate de tener los documentos correctos y actualizados, y lleva contigo una copia de los mismos cuando conduzcas para evitar problemas y facilitar cualquier trámite necesario.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>                                    <!--Termina una carta-->
+            </div>
+    
+        </section>
+        <section class="row text-center" id="opiniones">
+            <h2>Opiniones</h2>
+            <div class="container">
+                <ul class="comments">
+                    <% comments.forEach(comment => { %>
+                        <li class="comment">
+                            <div class="user shadow-sm"><span class="username"><%= comment.email %></span><span class="time"><%= comment.fecha %></span></div>
+                            <div class="message shadow-sm"><div class="message-content"><%= comment.message %></div></div>
+                        </li>
+                    <% }) %>
+                </ul>
+            </div>
+        </section>
+
+        <section class="shadow-lg" id="seccion-form">
+            <div class="row shadow-sm" id="container-form">
+                <h3>Deja tu Opinion sobre el blog aqui!</h3>
+                <form class="rounded-3" id="formulario-opinion">
+                    <label for="message">Mensaje</label><br>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Deja tu mensaje aquí..."></textarea><br><br>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="row text-center" id="redes">
+            <h2>Redes sociales</h2>
+            <div class="col" id="contenedor-redes">
+                <a href="" class="iconos"><img src="imgs/Facebook-icon.svg" alt="Icono de Facebook" width="125px"></a>
+                <a href="" class="iconos"><img src="imgs/Instagram-Icon.svg"  alt="Icono de Instagram" width="110px"></a>
+                <a href="" class="iconos"><img src="imgs/Wsp-icon.svg"  alt="Icono de Whatsapp" width="125px"></a>
+                <a href="" class="iconos"><img src="imgs/Email-icon.svg"  alt="Icono de Email" width="125px"></a>
+                <a href="" class="iconos"><img src="imgs/Github-icon.svg"  alt="Icono de github" width="125px"></a>
+                <a href="" class="iconos"><img src="imgs/Twitter-icon.svg"  alt="Twitter" width="125px"></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Autoblog hecho por Gonzalo Castellino</p>
+    </footer>
+
+    <script src="js/generateComment.js"></script>  
+</body>
+
+</html>

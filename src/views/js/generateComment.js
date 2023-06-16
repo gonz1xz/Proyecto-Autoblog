@@ -3,6 +3,10 @@ const form = document.getElementById('formulario-opinion');
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     const message = document.getElementById('message').value;
+    if (message.length < 10) {
+        alert('Por favor, ingresa al menos 10 caracteres en el mensaje.');
+        return; // Detiene el envío del formulario si ingresan menos de 10 caracteres
+    }
     const fechaSinFormatear = new Date();
 
     const dia = String(fechaSinFormatear.getDate()).padStart(2, '0');

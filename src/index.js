@@ -40,7 +40,7 @@ app.use((req, res, next) => {
 });
 
 // Rutas
-app.use('/', require('./routes/index'));
+app.use('/', require('./routes/app'));
 app.use(express.static(path.join(__dirname, 'views')));
 
 // Inicio el servidor

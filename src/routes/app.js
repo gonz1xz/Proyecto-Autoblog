@@ -6,7 +6,11 @@ const Comment = require('../models/comment');
 //RUTAS
 
 router.get('/', (req, res, next) => {
-  res.redirect('/signin');
+  res.redirect('/informacion');
+});
+
+router.get('/informacion', (req, res, next) => {
+  res.render('informacion');
 });
 
 router.get('/signup', (req, res, next) => {

@@ -11,7 +11,7 @@
 		integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
 		crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://use.typekit.net/jvs5fzv.css">
-    <link rel="stylesheet" type="text/css" href="/estilos/signup.css">
+    <link rel="stylesheet" type="text/css" href="/estilos/informacion.css">
 </head>
 
 <body>
@@ -40,41 +40,21 @@
 	</div>
 	<div class="cita mt-5">
 		<p>
-			“Lo que merece ser hecho, merece que se haga bien”. -Enzo Ferrari
+			"El automóvil más bello es el que todavía nos queda por hacer". -Enzo Ferrari.
 		</p>
 	</div>
-	<% if (signupMessage.length> 0) { %>
-		<div class="alert text-center alert-danger w-50 m-auto">
-			<%= signupMessage %>
-		</div>
-	<% } %>
 			<div class="container justify-content-center align-items-center vh-100 mt-2">
-				<div class="card w-75 m-auto h-50 mt-5">
+				<div class="card w-75 m-auto mt-5">
 					<div class="card-header">
 						<h2 class="card-title text-center">
-							Registrarse
+							información
 						</h2>
 					</div>
 					<div class="card-body">
-                        <form action="/signup" method="post">
-                          <div class="mb-3">
-                            <label for="email" class="form-label mt-3">Ingrese su email</label>
-                            <input type="email" name="email" class="form-control" placeholder="Ingrese su email" required />
-                          </div>
-                          <div class="mb-3">
-                            <label for="password" class="form-label mt-3">Ingrese su contraseña</label>
-                            <input type="password" name="password" class="form-control" placeholder="Ingrese su contraseña" required />
-                          </div>
-						  <div class="mb-5">
-							<p>Si ya tienes una cuenta, <a href="/signin">Inicia sesión</a></p>
-						</div>
-                          <div class="d-flex justify-content-center">
-                            <button type="submit" class="btn btn-dark mt-5">
-                              Registrarse
-                            </button>
-                          </div>
-                        </form>
-                    </div>  
+						<p class="card-text">¡Hola! Soy Gonzalo Castellino y en "GC" te brindaré un blog dedicado a mantener tu vehículo en excelente estado. Aquí compartiré consejos prácticos, trucos y recomendaciones para asegurarte de que tu automóvil siempre esté en las mejores condiciones. Desde el mantenimiento básico hasta consejos de cuidado especializado, te guiaré para que puedas disfrutar al máximo de tu vehículo.</p>
+						<p class="card-text">Únete a nuestra comunidad y descubre cómo mantener tu vehículo en óptimas condiciones con "GC". ¡<a class="nav-link" href="/signin">Inicia sesión</a> o <a class="nav-link" href="/signup">registrate</a> para acceder a contenido exclusivo! Además, ¡no te olvides de dejarnos un comentario! Tu opinión es importante para nosotros.</p>
+						<p class="card-text">¡Te esperamos en "GC" para ayudarte a cuidar y disfrutar al máximo de tu automóvil!</p>
+                    </div>
 				</div>
 			</div>
 	<footer>
